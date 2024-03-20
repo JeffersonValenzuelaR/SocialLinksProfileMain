@@ -24,8 +24,17 @@
       <button class="button white">LinkedIn</button>
       <button class="button white">Twitter</button>
       <button class="button white">Instagram</button>
+      <!-- Botón de Facebook -->
+      <button class="button white" onclick="loginWithFacebook()">Facebook</button>
     </div>
-
   </div>
+
+  <script>
+    function loginWithFacebook() {
+      // Redirigir al inicio de sesión de Facebook
+      // Aquí debes reemplazar 'YOUR_APP_ID' con el ID de tu aplicación de Meta Developers
+      window.location.href = 'https://www.facebook.com/v12.0/dialog/oauth?client_id=7590829360956820&redirect_uri=https://tu-sitio.com/facebook-callback&scope=email';
+    }
+  </script>
 </body>
 </html>
